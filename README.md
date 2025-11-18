@@ -12,6 +12,7 @@
 - Telegram Channel: [https://t.me/Malak_root/](https://t.me/Malak_root/)
 
 #### Credits
-This module is adapted from [Play Integrity Fork](https://github.com/osm0sis/PlayIntegrityFork) by @osm0sis and modified by @IBDump.
+This module is adapted from [Play Integrity Fork](https://github.com/osm0sis/PlayIntegrityFork) by [@osm0sis](https://github.com/osm0sis) and modified by [@IBDump](https://github.com/IBDump).
+
 
 
