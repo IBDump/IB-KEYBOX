@@ -5,4 +5,5 @@ versionCode=200
 author=MALAK AL KHALIJ (@IBRAHIM@SAMY)
 description=Premium Play Integrity Fix & SaftyNet On Android 10+
 Telegram Channel: https://t.me/malak_root
-updateJson=
+updateJson=https://raw.githubusercontent.com/IBDump/IB-KEYBOX/main/update.json
+
