@@ -3,7 +3,7 @@
 - **Suggested:**
 - [**Shamiko**](https://github.com/LSPosed/LSPosed.github.io/releases)  
 - [**Built-in BusyBox:**](https://github.com/Magisk-Modules-Alt-Repo/BuiltIn-BusyBox/releases)  
-- **Apatch & KernelSU Next Requirement:** [**Zygisk Next**](https://github.com/DrTSNG/ZygiskNext/releases)
+- **Apatch & KernelSU Next Requirement:** [**Zygisk Next**]([https://github.com/DrTSNG/ZygiskNext/releases](https://github.com/Dr-TSNG/ZygiskNext/releases))
 
 ## Features
 - Play Integrity fix  
