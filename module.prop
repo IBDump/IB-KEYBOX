@@ -1,9 +1,8 @@
 id=playintegrityfix
 name=IB-KEYBOX📦
-version=v2.2
-versionCode=220
+version=v2.3
+versionCode=230
 author=MALAK AL KHALIJ (@IBRAHIM & @SAMY)
 description=Premium Play Integrity Fix & SafetyNet On Android 10+
 telegram=https://t.me/malak_root
 updateJson=https://raw.githubusercontent.com/IBDump/IB-KEYBOX/main/update.json
-
