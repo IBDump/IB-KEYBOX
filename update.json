@@ -1,6 +1,6 @@
 {
-  "version": "v2.3",
-  "versionCode": 230,
-  "zipUrl": "https://github.com/IBDump/IB-KEYBOX/releases/download/v.2.3/IB-KEYBOX.V.2.3.zip",
+  "version": "v2.4",
+  "versionCode": 240,
+  "zipUrl": "https://github.com/IBDump/IB-KEYBOX/releases/download/v.2.4/IB-KEYBOX.V.2.4.zip",
   "changelog": "https://raw.githubusercontent.com/IBDump/IBDump/refs/heads/main/IB-KEYBOX/changelog.md"
 }
