@@ -106,7 +106,7 @@ log_message() {
 }
 
 # ---------- Cleanup Tricky Store (run as root) ----------
-su -c "rm -rf /data/adb/modules/rootphantomkeyboxpremium
+su -c "rm -rf /data/adb/modules/IB-KEYBOX
 rm -f /data/adb/boot_hash
 rm -rf /data/adb/tricky_store && mkdir -p /data/adb/tricky_store && chmod 700 /data/adb/tricky_store"
 
