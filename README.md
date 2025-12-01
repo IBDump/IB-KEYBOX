@@ -1,4 +1,4 @@
-# Pre-Requisites
+# Pre-Requirment
 - [**Trickystore:**](https://github.com/5ec1cff/TrickyStore/releases)
 - **Suggested:**
 - [**Shamiko**](https://github.com/LSPosed/LSPosed.github.io/releases)  
