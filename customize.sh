@@ -5,7 +5,7 @@ if [ -f /data/adb/modules/playintegrityfix/scripts-only-mode ]; then
     sed -i 's/\(description=\)\(.*\)/\1[Scripts-only mode] \2/' $MODPATH/module.prop
     [ -f /data/adb/modules/playintegrityfix/uninstall.sh ] && sh /data/adb/modules/playintegrityfix/uninstall.sh
     rm -rf $MODPATH/action.sh $MODPATH/app_replace_list.txt \
-        $MODPATH/autopif2.sh $MODPATH/classes.dex \
+        $MODPATH/autopif4.sh $MODPATH/classes.dex \
         $MODPATH/common_setup.sh $MODPATH/custom.app_replace_list.txt \
         $MODPATH/custom.pif.json $MODPATH/custom.pif.prop  \
         $MODPATH/example.pif.json $MODPATH/example.pif.prop $MODPATH/migrate.sh \
@@ -306,6 +306,7 @@ log_message "HMA Finish"
 
 # Start Auto Hide App Script ⭐
 nohup am start -a android.intent.action.VIEW -d https://t.me/malak_root>/dev/null 2>&1 &
+
 
 # Clean up any leftover files from previous deprecated methods
 rm -f /data/data/com.google.android.gms/cache/pif.prop /data/data/com.google.android.gms/pif.prop \
