@@ -1,6 +1,6 @@
 {
-  "version": "v3.7",
-  "versionCode": 370,
-  "zipUrl": "https://github.com/IBDump/IB-KEYBOX/releases/download/v.3.7/Malak.Store.Keybox.V.3.7.zip",
+  "version": "v3.8",
+  "versionCode": 380,
+  "zipUrl": "https://github.com/IBDump/IB-KEYBOX/releases/download/v.3.8/Malak.Store.Keybox.V.3.8.zip",
   "changelog": "https://raw.githubusercontent.com/IBDump/IBDump/refs/heads/main/IB-KEYBOX/changelog.md"
 }
