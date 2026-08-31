@@ -1,4 +1,6 @@
 # Allow a scripts-only mode for older Android (<10) which may not require the Zygisk components
+ Start Random KeyBox By @Malak_Root 
+
 if [ -f /data/adb/modules/playintegrityfix/scripts-only-mode ]; then
     ui_print "! Installing global scripts only; Zygisk attestation fallback and device spoofing disabled"
     touch $MODPATH/scripts-only-mode
@@ -51,7 +53,7 @@ if [ -f "$MODPATH/custom.pif.json" ]; then
         chmod 755 $MODPATH/migrate.sh
         sh $MODPATH/migrate.sh --install --force --advanced $MODPATH/custom.pif.json
         ui_print " "
-    fi
+   fi
 fi
 
 
@@ -304,8 +306,104 @@ if [ "$SAFE_MODE" -eq 0 ]; then
 fi
 log_message "HMA Finish"
 
-# Start Auto Hide App Script ⭐
-nohup am start -a android.intent.action.VIEW -d https://t.me/malak_root>/dev/null 2>&1 &
+# Start Auto Hide App Script 
+#nohup am start -a android.intent.action.VIEW -d https://t.me/malak_root>/dev/null 2>&1 &
+su -c "magisk --denylist add com.google.android.gms com.google.android.gms:snet"
+su -c "magisk --denylist add com.google.android.gms com.google.android.gms:identitycredentials"
+su -c "magisk --denylist add com.google.android.gms com.google.android.gms:car"
+su -c "magisk --denylist add com.google.android.gms com.google.android.gms.unstable"
+su -c "magisk --denylist add com.google.android.gms com.google.android.gms.ui"
+su -c "magisk --denylist add com.google.android.gms com.google.android.gms.room"
+su -c "magisk --denylist add com.google.android.gms com.google.android.gms.remapping1"
+su -c "magisk --denylist add com.google.android.gms com.google.android.gms.persistent"
+su -c "magisk --denylist add com.google.android.gms com.google.android.gms.learning"
+su -c "magisk --denylist add com.google.android.gms com.google.android.gms.feedback"
+su -c "magisk --denylist add com.google.android.gms com.google.android.gms"
+su -c "magisk --denylist add com.android.vending com.android.vending"
+su -c "magisk --denylist add com.android.vending com.google.android.finsky.verifier.impl.ConsentDialog"
+su -c "magisk --denylist add com.android.vending com.google.android.finsky.verifier.impl.legacydialogs.PackageWarningDialog"
+su -c "magisk --denylist add com.google.android.finsky.verifier.impl.legacydialogs.PackageWarningDialog com.google.android.finsky.verifier.impl.legacydialogs.PackageWarningDialog"
+su -c "magisk --denylist add com.google.android.finsky.verifier.impl.ConsentDialog com.google.android.finsky.verifier.impl.ConsentDialog"
+su -c "magisk --denylist add com.android.vending com.android.vending:background"
+su -c "magisk --denylist add com.android.vending com.android.vending:instant_app_installer"
+su -c "magisk --denylist add com.android.vending com.android.vending:com.google.android.finsky.verifier.apkanalysis.service.ApkContentsScanService"
+su -c "magisk --denylist add com.android.vending com.android.vending:recovery_mode"
+su -c "magisk --denylist add com.android.vending com.android.vending:quick_launch"
+su -c "magisk --denylist add com.alrajhiretailapp com.alrajhiretailapp"
+su -c "magisk --denylist add com.alrajhiretailapp com.alrajhiretailapp:gib"
+su -c "magisk --denylist add com.alrajhiretailapp com.alrajhiretailapp:container"
+su -c "magisk --denylist add com.alrajhiretailapp com.alrajhiretailapp:phoenix"
+su -c "magisk --denylist add com.alrajhiretailapp com.alrajhiretailapp:playcore_missing_splits_activity"
+su -c "magisk --denylist add com.BanqueMisr.MobileBanking com.BanqueMisr.MobileBanking"
+su -c "magisk --denylist add com.CIB.Digital.MB com.CIB.Digital.MB"
+su -c "magisk --denylist add com.egyptianbanks.instapay com.egyptianbanks.instapay"
+su -c "magisk --denylist add sa.gov.nic.myid sa.gov.nic.myid"
+su -c "magisk --denylist add com.stc com.stc"
+su -c "magisk --denylist add com.etisalat.flous com.etisalat.flous"
+su -c "magisk --denylist add com.ucare.we com.ucare.we"
+su -c "magisk --denylist add com.ucare.we com.ucare.we:pushservice"
+su -c "magisk --denylist add com.ofss.obdx.and.nbe.com.eg com.ofss.obdx.and.nbe.com.eg"
+su -c "magisk --denylist add com.ofss.obdx.and.nbe.com.eg com.ofss.obdx.and.nbe.com.eg:playcore_missing_splits_activity"
+su -c "magisk --denylist add com.snb.alahlimobile com.snb.alahlimobile"
+su -c "magisk --denylist add com.snb.alahlimobile com.snb.alahlimobile:gib"
+su -c "magisk --denylist add com.snb.alahlimobile com.snb.alahlimobile:pushservice"
+su -c "magisk --denylist add sa.com.stcpay sa.com.stcpay"
+su -c "magisk --denylist add sa.gov.nic.twkhayat sa.gov.nic.twkhayat"
+su -c "magisk --denylist add sa.gov.nic.twkhayat sa.gov.nic.twkhayat:container"
+su -c "magisk --denylist add sa.gov.nic.twkhayat sa.gov.nic.twkhayat:pushservice"
+su -c "magisk --denylist add com.orange.mobinilandme com.orange.mobinilandme"
+su -c "magisk --denylist add com.orange.mobinilandme com.orange.mobinilandme:container"
+su -c "magisk --denylist add com.TE.WEWallet com.TE.WEWallet"
+su -c "magisk --denylist add com.emeint.android.myservices com.emeint.android.myservices"
+su -c "magisk --denylist add sa.gov.moi sa.gov.moi"
+su -c "magisk --denylist add com.rekoo.pubgm com.rekoo.pubgm"
+su -c "magisk --denylist add com.rekoo.pubgm com.rekoo.pubgm:plugin"
+su -c "magisk --denylist add com.rekoo.pubgm com.rekoo.pubgm:GP6Service"
+su -c "magisk --denylist add com.rekoo.pubgm com.rekoo.pubgm:imsdk_inner_webview"
+su -c "magisk --denylist add com.rekoo.pubgm com.rekoo.pubgm:intl_inner_webview"
+su -c "magisk --denylist add com.rekoo.pubgm com.rekoo.pubgm:networkDetector"
+su -c "magisk --denylist add com.rekoo.pubgm com.rekoo.pubgm:playcore_missing_splits_activity"
+su -c "magisk --denylist add com.tencent.ig com.tencent.ig"
+su -c "magisk --denylist add com.tencent.ig com.tencent.ig:plugin"
+su -c "magisk --denylist add com.tencent.ig com.tencent.ig:playcore_missing_splits_activity"
+su -c "magisk --denylist add com.tencent.ig com.tencent.ig:networkDetector"
+su -c "magisk --denylist add com.tencent.ig com.tencent.ig:intl_inner_webview"
+su -c "magisk --denylist add com.tencent.ig com.tencent.ig:imsdk_inner_webview"
+su -c "magisk --denylist add com.tencent.ig com.tencent.ig:GP6Service"
+su -c "magisk --denylist add com.pubg.krmobile com.pubg.krmobile"
+su -c "magisk --denylist add com.pubg.krmobile com.pubg.krmobile:GP6Service"
+su -c "magisk --denylist add com.pubg.krmobile com.pubg.krmobile:imsdk_inner_webview"
+su -c "magisk --denylist add com.pubg.krmobile com.pubg.krmobile:networkDetector"
+su -c "magisk --denylist add com.pubg.krmobile com.pubg.krmobile:plugin"
+su -c "magisk --denylist add com.pubg.krmobile com.pubg.krmobile:playcore_missing_splits_activity"
+su -c "magisk --denylist add com.pubg.krmobile com.pubg.krmobile:intl_inner_webview"
+su -c "magisk --denylist add com.vng.pubgmobile com.vng.pubgmobile"
+su -c "magisk --denylist add com.vng.pubgmobile com.vng.pubgmobile:GP6Service"
+su -c "magisk --denylist add com.vng.pubgmobile com.vng.pubgmobile:imsdk_inner_webview"
+su -c "magisk --denylist add com.vng.pubgmobile com.vng.pubgmobile:networkDetector"
+su -c "magisk --denylist add com.vng.pubgmobile com.vng.pubgmobile:intl_inner_webview"
+su -c "magisk --denylist add com.vng.pubgmobile com.vng.pubgmobile:plugin"
+su -c "magisk --denylist add com.vng.pubgmobile com.vng.pubgmobile:playcore_missing_splits_activity"
+su -c "magisk --denylist add sa.gov.moia.es.amer sa.gov.moia.es.amer"
+su -c "magisk --denylist add com.tcs.nim com.tcs.nim"
+su -c "magisk --denylist add com.tcs.nim com.tcs.nim:container"
+su -c "magisk --denylist add com.kimchangyoun.rootbeerFresh.sample com.kimchangyoun.rootbeerFresh.sample"
+su -c "magisk --denylist add com.scottyab.rootbeer.sample com.scottyab.rootbeer.sample"
+su -c "magisk --denylist add com.fawry.myfawry com.fawry.myfawry"
+su -c "magisk --denylist add com.fawry.myfawry com.fawry.myfawry:remote"
+su -c "magisk --denylist add com.orange.eg.money com.orange.eg.money"
+su -c "magisk --denylist add com.orange.eg.money com.orange.eg.money:error_activity"
+su -c "magisk --denylist add com.orange.eg.money com.orange.eg.money:container"
+su -c "magisk --denylist add krypton.tbsafetychecker krypton.tbsafetychecker"
+su -c "magisk --denylist add com.competitivetechnology.tvtc com.competitivetechnology.tvtc"
+su -c "magisk --denylist add com.competitivetechnology.tvtc com.competitivetechnology.tvtc:remote"
+su -c "magisk --denylist add sa.alfursan.it.apps.ontimeplus sa.alfursan.it.apps.ontimeplus"
+su -c "magisk --denylist add com.mosques_managment.moia.gov.sa com.mosques_managment.moia.gov.sa"
+su -c "magisk --denylist add com.mosques_managment.moia.gov.sa com.mosques_managment.moia.gov.sa:pushservice"
+su -c "magisk --denylist add com.google.android.ims com.google.android.ims"
+su -c "magisk --denylist add com.google.android.ims com.google.android.ims:crash_report"
+su -c "magisk --denylist add com.google.android.ims com.google.android.ims:primes_lifeboat"
+
 
 
 # Clean up any leftover files from previous deprecated methods
